@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="@string/write_some_notes"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp"
+                android:inputType="textMultiLine"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RadioGroup
+        android:id="@+id/radioGroupPack"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_weight="0"
+        >
+
+        <RadioButton
+            android:id="@+id/radButton1"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorGreen"
+            android:checked="true"
+            android:text="@string/general"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorBlue"
+            android:text="@string/work"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:text="@string/family"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorYellow"
+            android:text="@string/personal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "15987********",
+    "firebase_url": "https://andelatask.firebaseio.com",
+    "project_id": "andelatask",
+    "storage_bucket": "andelatask.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159878812938:android:7d9bd*******",
+        "android_client_info": {
+          "package_name": "com.journalapp.u.alc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "********mvoms0t0tsfrr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.journalapp.u.alc",
+            "certificate_hash": "************************"
+          }
+        },
+        {
+          "client_id": "************spoptmj91lv260.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "********************8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "****************************",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
